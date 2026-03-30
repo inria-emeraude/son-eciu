@@ -1,0 +1,49 @@
+site_name: SON @ ECIU
+site_description: ECIU Micro-Module on Embedded Real-Time Audio
+nav:
+  - Lectures:
+    - ' 1: Audio Signal Processing Fundamentals ' : lectures/audio-dsp.md
+    - ' 2: Programming Environment Setup ' : lectures/setup.md
+    - ' 3: Digital Audio Systems Architectures and Audio Callback ' : lectures/audio-sys.md
+    - ' 4: Hardware Control and Audio Codec Configuration ' : lectures/control.md
+    - ' 5: Introduction to Faust ' : lectures/faust.md
+    - ' 6: Audio Processing Basics I ' : lectures/dsp1.md
+    - ' 7: Audio Processing Basics II ' : lectures/dsp2.md
+    - ' 8: Faust on the Teensy and Advanced Control ' : lectures/faust-teensy.md
+    - ' Some Other Useful Things to Know ' : lectures/useful.md
+  - Projects:
+    - ' Instructions ' : projects/instructions.md
+  - Code: "https://github.com/inria-emeraude/son"
+    
+theme: 
+  name: darkly
+  navigation_depth: 4
+
+site_dir: ../docs
+site_url: https://inria-emeraude.github.io/son/
+
+extra:
+    social:
+        - type: github
+          link: https://inria-emeraude.github.io/son/
+        - type: home
+          link: https://inria-emeraude.github.io/son/
+        - type: envelope
+          link: mailto:romain.michon@inria.fr
+
+plugins:
+  - search
+
+extra_css: [extra.css]
+
+extra:
+  search:
+    language: fr
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+    - mdx_math
+    - markdown_include.include:
+        base_path: './docs'
