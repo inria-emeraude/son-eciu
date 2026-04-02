@@ -35,8 +35,8 @@ Students are provided with plenty of fully-operational starter code/projects so 
 
 ## Course Overview
 
-* **Lecture 1: [Audio Signal Processing Fundamentals](lectures/audio-dsp.md)**
-* **Lecture 2: [Course Introduction and Programming Environment Setup](lectures/setup.md)**
+* **Lecture 1: [Course Introduction and Programming Environment Setup](lectures/setup.md)**
+* **Lecture 2: [Audio Signal Processing Fundamentals](lectures/audio-dsp.md)**
 * **Lecture 3: [Digital Audio Systems Architectures and Audio Callback](lectures/audio-sys.md)** 
 * **Lecture 4: [Hardware Control and Audio Codec Configuration](lectures/control.md)**
 * **Lecture 5: [Introduction to Faust](lectures/faust.md)**

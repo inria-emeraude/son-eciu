@@ -2,8 +2,8 @@ site_name: SON @ ECIU
 site_description: ECIU Micro-Module on Embedded Real-Time Audio
 nav:
   - Lectures:
-    - ' 1: Audio Signal Processing Fundamentals ' : lectures/audio-dsp.md
-    - ' 2: Programming Environment Setup ' : lectures/setup.md
+    - ' 1: Programming Environment Setup ' : lectures/setup.md
+    - ' 2: Audio Signal Processing Fundamentals ' : lectures/audio-dsp.md
     - ' 3: Digital Audio Systems Architectures and Audio Callback ' : lectures/audio-sys.md
     - ' 4: Hardware Control and Audio Codec Configuration ' : lectures/control.md
     - ' 5: Introduction to Faust ' : lectures/faust.md
