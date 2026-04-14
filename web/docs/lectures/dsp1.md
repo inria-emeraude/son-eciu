@@ -234,6 +234,7 @@ where \(s\) is the value of the pole and is typically set to 0.999 for optimal r
 
 Modify the [crazy-saw](https://github.com/inria-emeraude/son/tree/main/examples/teensy/projects/crazy-saw) example by "smoothing" the value of the frequency parameter by implementing the filter above with \(s=0.999\). Then slow down the rate at which frequency is being changed so that only two new values are generated per second. The result should sound quite funny :).
 
+<!--
 **Solution:**
 
 In addition to `Smooth.cpp` and `Smooth.h`, in `Phasor.h`:
@@ -254,6 +255,7 @@ float Phasor::tick(){
   return currentSample;
 }
 ```
+-->
 
 ### Smoothing Potentiometer Values
 
