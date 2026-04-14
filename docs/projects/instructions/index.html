@@ -144,18 +144,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="3"><a href="#cochlear-implant-simulator" class="nav-link">Cochlear Implant Simulator</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#sonification-system" class="nav-link">Sonification System</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#superman-hearing" class="nav-link">Superman Hearing</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-bs-level="3"><a href="#guitar-pedal-effect" class="nav-link">Guitar Pedal Effect</a>
               <ul class="nav flex-column">
               </ul>
@@ -168,27 +156,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="3"><a href="#feedback-cancellation-microphone" class="nav-link">Feedback Cancellation Microphone</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#augmented-speaker" class="nav-link">Augmented Speaker</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-bs-level="3"><a href="#musical-instrument" class="nav-link">Musical Instrument</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             <li class="nav-item" data-bs-level="3"><a href="#midi-controlled-polyphonic-synthesizer" class="nav-link">MIDI-Controlled Polyphonic Synthesizer</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#granular-synthesizer" class="nav-link">Granular Synthesizer</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="3"><a href="#dafx" class="nav-link">DAFx</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -242,30 +214,44 @@ As for the project itself, you will be evaluated on its:
 <p>Pitch-Shifting consists in transposing (up or down) the sound of an input source so that it sounds lower or higher. Pitch shifting can potentially be implemented using 2 different techniques: (i) using an FFT to transpose the spectrum and then an inverse FFT to put it back in the time domain, (ii) using the doppler effect produced by changing the length of delay lines in real-time. Hence, the goal of this project is to make a "pitch shifting box/audio processor" based on the Teensy. In addition to figuring out how to implement the algorithm (which should involve pitch shifting and frequency tracking), you should think about the interface that your project will have (which parameters can be controlled?, etc.).</p>
 <h3 id="hearing-aid">Hearing Aid</h3>
 <p>At the most fundamental level, hearing aids just implement a bunch of equalization filters (see <a href="../../lectures/dsp2/#peak-equalizers">Peak Equalizers</a>) increasing the volume of some bands in the spectrum of a sound (the ones that an individual can't hear well anymore). The goal of this project is to implement an hearing aid prototype based on the Teensy. If time allows it, you should try to measure the audiogram of someone with hearing loss to test your system in a real-world context.</p>
-<h3 id="cochlear-implant-simulator">Cochlear Implant Simulator</h3>
-<p>Cochlear implants (<a href="https://en.wikipedia.org/wiki/Cochlear_implant">https://en.wikipedia.org/wiki/Cochlear_implant</a>) allow many people who were condemned to be deaf their entire life to now hear some sound and even speech if they're well trained. This paper: <a href="https://embaudio.grame.fr/cochlear.pdf">https://embaudio.grame.fr/cochlear.pdf</a> describes precisely how a cochlear implant simulator can be implemented using DSP. The goal of this project is to create a sound processing box simulating the sound of a cochlear implant. For that, you will probably need some of the filters described <a href="../../lectures/dsp2/#making-resonant-lowpass-bandpass-and-highpass">here</a>.</p>
-<h3 id="sonification-system">Sonification System</h3>
-<p>Data sonification is a trending method for analyzing data in real-time. The brain stethoscope (<a href="https://youtu.be/pnGzVW_7cfM">https://youtu.be/pnGzVW_7cfM</a>) is a good example of that. Choose a sensor technology and develop a sonification technology around it.</p>
-<h3 id="superman-hearing">Superman Hearing</h3>
-<p>Try to make your own version of Facebook's "superman hearing" system (<a href="https://about.fb.com/news/2020/09/facebook-reality-labs-research-future-of-audio/">https://about.fb.com/news/2020/09/facebook-reality-labs-research-future-of-audio/</a>).</p>
+<!--### Cochlear Implant Simulator
+
+Cochlear implants (<https://en.wikipedia.org/wiki/Cochlear_implant>) allow many people who were condemned to be deaf their entire life to now hear some sound and even speech if they're well trained. This paper: <https://embaudio.grame.fr/cochlear.pdf> describes precisely how a cochlear implant simulator can be implemented using DSP. The goal of this project is to create a sound processing box simulating the sound of a cochlear implant. For that, you will probably need some of the filters described [here](../lectures/dsp2.md#making-resonant-lowpass-bandpass-and-highpass).-->
+
+<!--### Sonification System
+
+Data sonification is a trending method for analyzing data in real-time. The brain stethoscope (<https://youtu.be/pnGzVW_7cfM>) is a good example of that. Choose a sensor technology and develop a sonification technology around it.-->
+
+<!--### Superman Hearing
+
+Try to make your own version of Facebook's "superman hearing" system (<https://about.fb.com/news/2020/09/facebook-reality-labs-research-future-of-audio/>).-->
+
 <h3 id="guitar-pedal-effect">Guitar Pedal Effect</h3>
 <p>There exist dozens of guitar pedal effects: <a href="https://en.wikipedia.org/wiki/Effects_unit">https://en.wikipedia.org/wiki/Effects_unit</a>. The goal of this project is to make a guitar pedal "stompbox." Don't forget to think about the interface and the shape of the final product.</p>
 <h3 id="sound-synthesis-module">Sound Synthesis Module</h3>
 <p>Modular synthesizers (<a href="https://en.wikipedia.org/wiki/Modular_synthesizer">https://en.wikipedia.org/wiki/Modular_synthesizer</a>) became very popular in recent years. Each hardware module implements and sound synthesis or processing technique and offers an interface made of buttons, knobs, etc. The goal of this project is to implement your own sound synthesis module based on a Teensy. If you own a modular synth yourself, think about how your module could integrate to your toolchain, etc.</p>
 <h3 id="ep-vinyl-simulator">EP (Vinyl) Simulator</h3>
 <p>Love the sound of EPs (<a href="https://en.wikipedia.org/wiki/Extended_play">https://en.wikipedia.org/wiki/Extended_play</a>)? Implement a system that plugs to your living room sound system and makes the sound of any device you plug to it sound like an EP. For that, you will first have to document yourself on the impact on sound of this analog technology. There exists a couple of scientific papers that describe this fairly well. Make sure that you think about the interface that your system will have and about the form that your final product will take, etc.</p>
-<h3 id="feedback-cancellation-microphone">Feedback Cancellation Microphone</h3>
-<p>Feedback happens when a microphone and speaker implement a feedback loop. This results in a very annoying sound which sound engineers try to avoid as much as possible during concerts. Try to make a microphone carrying out real-time audio DSP to limit feedback. There exist many scientific papers on this topic which means that you will first have to document yourself on this topic.</p>
-<h3 id="augmented-speaker">Augmented Speaker</h3>
-<p>Make a speaker processing its audio input in real time to add audio effects, improve the quality of sound, etc. The goal of this project is to focus more on the product design aspect to try to design an appealing object. Think about the interface that system could have (maybe accessible through a smartphone? Etc.).</p>
+<!--### Feedback Cancellation Microphone
+
+Feedback happens when a microphone and speaker implement a feedback loop. This results in a very annoying sound which sound engineers try to avoid as much as possible during concerts. Try to make a microphone carrying out real-time audio DSP to limit feedback. There exist many scientific papers on this topic which means that you will first have to document yourself on this topic.-->
+
+<!--### Augmented Speaker
+
+Make a speaker processing its audio input in real time to add audio effects, improve the quality of sound, etc. The goal of this project is to focus more on the product design aspect to try to design an appealing object. Think about the interface that system could have (maybe accessible through a smartphone? Etc.).-->
+
 <h3 id="musical-instrument">Musical Instrument</h3>
 <p>The goal of this project is to make musical instrument based on a Teensy. The domain of New Interfaces for Musical Expression (NIME): <a href="https://www.nime.org/">https://www.nime.org/</a> has been booming in recent years and hundreds of musical instruments have been created. Feel free to get more inspiration here: <a href="https://ccrma.stanford.edu/courses/250a-spring-2023">https://ccrma.stanford.edu/courses/250a-spring-2023</a>!</p>
 <h3 id="midi-controlled-polyphonic-synthesizer">MIDI-Controlled Polyphonic Synthesizer</h3>
 <p>Build a polyphonic (multiple notes can be played at the same time) synthesizer based on a USB MIDI keyboard (using the <a href="https://www.pjrc.com/teensy/td_midi.html">Teensy USB MIDI Library</a>). The keyboard should connect directly to the Teensy through the USB port. The synth should have multiple parameters to control through MIDI CCs. For this project, you'll have to find a way to externally power your Teensy since the USB port will be used for connecting the MIDI keyboard, etc.</p>
-<h3 id="granular-synthesizer">Granular Synthesizer</h3>
-<p>Granular synthesis <a href="https://en.wikipedia.org/wiki/Granular_synthesis">https://en.wikipedia.org/wiki/Granular_synthesis</a> consists in looping a short sound sample to generate sound textures with it. The goal of this project is to make a granular synthesis module based on a Teensy. You should think about the interface that your system will have (i.e., which parameter to control, etc.). Note that since you will have to record audio samples on the Teensy, you will likely have to use an SD card for this because of the limited amount of memory available on the Teensy.</p>
-<h3 id="dafx">DAFx</h3>
-<p>DAFx is THE conference on digital audio effects: <a href="https://www.dafx.de/">https://www.dafx.de/</a>. The goal of this project is to pickup any paper in the DAFx literature and implement it on the Teensy.</p>
+<!--### Granular Synthesizer
+
+Granular synthesis <https://en.wikipedia.org/wiki/Granular_synthesis> consists in looping a short sound sample to generate sound textures with it. The goal of this project is to make a granular synthesis module based on a Teensy. You should think about the interface that your system will have (i.e., which parameter to control, etc.). Note that since you will have to record audio samples on the Teensy, you will likely have to use an SD card for this because of the limited amount of memory available on the Teensy.-->
+
+<!--### DAFx
+
+DAFx is THE conference on digital audio effects: <https://www.dafx.de/>. The goal of this project is to pickup any paper in the DAFx literature and implement it on the Teensy.-->
+
 <h3 id="any-other-idea">Any Other Idea...</h3>
 <p>Feel free to work on anything else but talk to us first :).</p></div>
             </div>
