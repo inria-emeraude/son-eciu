@@ -240,6 +240,10 @@ where the definition of `tf2s` (direct-form 2 biquadratic filter operating the b
 
 Implement this filter and test it the same way as you did for the resonant lowpass/bandpass/highpass.
 
+### Potential solution to the previous excercises
+
+[This project](dsp2/biquad.zip) by student Hugo Martel is a state of the art solution to the previous exercises.
+
 ### Browsing Through the Teensy Audio Library Examples
 
 The Teensy audio library comes with a series of example programs which are pre-installed with Teensyduino in `File/Examples/Teensy/Audio` (in the Teensyduino interface). Browse through the examples to get a sense of what's out there.
